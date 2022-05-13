@@ -1,25 +1,58 @@
-@import 'library';
-@import 'btn';
-@import 'nav';
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+@import 'library';
+@import 'btn';
+@import 'nav';
+
 body {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.h-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container {
     padding: 3rem 20rem;
+
+    header {
+        padding-bottom: 3rem;
+    }
 }
 
 .row {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+
+    > .col.w-25 {
+        flex-basis: 25%;
+    }
+
+    > .col.w-33 {
+        flex-basis: 33.3%;
+    }
+
+    > .col.w-50 {
+        flex-basis: 50%;
+    }
+
+    > .col.w-auto {
+        flex: 0;
+    }
+
+    > .col.fill {
+        flex: 1;
+    }
+}
+
+header, .w-header {
+    max-width: 40vw;
 }
 
 header {
@@ -28,7 +61,6 @@ header {
     /* gap: 1rem; */
     margin: 0 auto;
     text-align: center;
-    max-width: 40vw;
 }
 
 header > * {
@@ -44,6 +76,11 @@ header h1 {
 header p {
     font-size: 130%;
     color: $light;
+}
+
+hr {
+    border: 1px solid $light-bg;
+    width: 100%;
 }
 
 @media only screen and (max-width: 2000px){
@@ -65,7 +102,7 @@ header p {
 }
 
 @media only screen and (max-width: 1200px){
-    header {
+    header, .w-header {
         max-width: 70vw;
     }
     header h1 {
@@ -80,7 +117,7 @@ header p {
 }
 
 @media only screen and (max-width: 900px){
-    header {
+    header, .w-header {
         max-width: initial;
     }
     .container {

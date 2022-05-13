@@ -4,7 +4,8 @@
   "description": "This is a bank of styling to make it easier for me to make projects without spending valuable time rewriting CSS.",
   "main": "index.js",
   "scripts": {
-    "build": "npx sass scss/index.scss:build/index.min.css --style=compressed && postcss build/index.min.css --replace --use autoprefixer"
+    "watch": "npx sass --watch scss/index.scss:css/index.min.css",
+    "build": "npx sass --no-source-map scss/index.scss:build/index.min.css --style=compressed && postcss build/index.min.css --no-map --replace --use autoprefixer"
   },
   "repository": {
     "type": "git",
