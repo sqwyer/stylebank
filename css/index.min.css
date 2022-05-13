@@ -243,9 +243,25 @@ body[data-type=dark] {
   color: #727988;
 }
 
+.theme-lighter {
+  background-color: rgba(211, 215, 223, 0.1);
+}
+
+body[data-type=dark] .theme-lighter {
+  background-color: rgba(53, 54, 56, 0.4);
+}
+
 .h-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.pad-top-3 {
+  padding-top: 3rem;
+}
+
+.pad-bottom-3 {
+  padding-bottom: 3rem;
 }
 
 .container {
@@ -274,6 +290,36 @@ body[data-type=dark] {
 }
 .row > .col.fill {
   flex: 1;
+}
+.row > .col.styled {
+  padding: 1rem 1.5rem;
+  border-radius: 10pt;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.row > .col.styled p {
+  color: #30353d;
+}
+
+body[data-type=dark] .row > .col.styled p {
+  color: #727988;
+}
+
+.row.gap-1 {
+  gap: 1rem;
+}
+
+.row.gap-2 {
+  gap: 2rem;
+}
+
+h3 {
+  color: #30353d;
+}
+
+body[data-type=dark] h3 {
+  color: #e3e7f0;
 }
 
 hr {

@@ -18,9 +18,23 @@ body[data-type="dark"] {
     color: $light;
 }
 
+.theme-lighter {
+    background-color: $lightest-bg;
+}
+body[data-type="dark"] .theme-lighter {
+    background-color: $dark-bg;
+}
+
 .h-center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.pad-top-3 {
+    padding-top: 3rem;
+}
+.pad-bottom-3 {
+    padding-bottom: 3rem;
 }
 
 .container {
@@ -55,6 +69,35 @@ body[data-type="dark"] {
     > .col.fill {
         flex: 1;
     }
+    > .col.styled {
+        padding: 1rem 1.5rem;
+        border-radius: 10pt;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    > .col.styled p {
+        color: $dark;
+    }
+}
+body[data-type="dark"] .row {
+    > .col.styled p {
+        color: $light;
+    }
+}
+.row.gap-1 {
+    gap: 1rem;
+}
+.row.gap-2 {
+    gap: 2rem;
+}
+
+h3 {
+    color: $dark;
+}
+
+body[data-type="dark"] h3 {
+    color: $lightest;
 }
 
 hr {
