@@ -1,0 +1,24 @@
+{
+  "name": "stylebank",
+  "version": "1.0.0",
+  "description": "This is a bank of styling to make it easier for me to make projects without spending valuable time rewriting CSS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/index.scss:build/index.min.css --style=compressed && postcss build/index.min.css --replace --use autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqwyer/stylebank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqwyer/stylebank/issues"
+  },
+  "homepage": "https://github.com/sqwyer/stylebank#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss-cli": "^9.1.0"
+  }
+}
