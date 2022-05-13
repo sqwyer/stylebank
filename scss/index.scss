@@ -1,4 +1,6 @@
 @import 'library';
+@import 'btn';
+@import 'nav';
 
 * {
     padding: 0;
@@ -12,69 +14,6 @@ body {
 
 .container {
     padding: 3rem 20rem;
-}
-
-.nav {
-    display: grid;
-    padding: .7rem 0;
-    font-size: 100%;
-    margin: 0 20rem;
-    /* gap: 1rem; */
-    grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
-    font-weight: 600;
-    border-bottom: 2px solid rgba(211,215,223,.4);
-    align-items: center;
-    align-content: center;
-}
-
-.nav.full-width {
-    margin: 0!important;
-    padding: .7rem 4rem;
-}
-
-.nav > .center + *:last-child, .nav > .right {
-    justify-content: right;
-    float: right;
-}
-
-.nav > ul.links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-.nav > ul.links > li > a, .nav .link, .btn {
-    padding: .33rem .89rem .44rem;
-    border-radius: .22rem;
-    block-size: 2.6rem;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex;
-    border: none;
-    outline: none;
-    font-weight: 600;
-    min-inline-size: min-content;
-    width: fit-content;
-}
-
-.btn {
-    background-color: rgba(211,215,223,.4);
-    color: #000000;
-    block-size: 2.68rem;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.55rem 1.33rem 0.66rem;
-}
-
-.nav .link.primary, .btn.primary {
-    background-color: $primary!important;
-    color: #fff!important;
-}
-
-.nav > ul.links > li > a:hover, .nav .link:hover {
-    background-color:rgba(211,215,223,.4);
 }
 
 .row {
