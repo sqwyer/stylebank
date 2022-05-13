@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --primary-color: #0084ff;
+}
+
+body[data-type=dark] {
+  --primary-color: #005bb1;
+}
+
+body {
+  --primary-color: #0084ff;
+}
+
+body[data-type=dark] {
+  --primary-color: #005bb1;
+}
+
+.btn {
+  border-radius: 0.22rem;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  min-inline-size: min-content;
+  width: fit-content;
+  background-color: rgba(211, 215, 223, 0.4);
+  color: #000000;
+  block-size: 2.68rem;
+  font-size: 1rem;
+  padding: 0.55rem 1.33rem 0.66rem;
+}
+
+body[data-type=dark] .btn {
+  background-color: rgba(53, 54, 56, 0.4);
+  color: #fff;
+}
+
+.btn.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body[data-type=dark] .btn.primary {
+  background-color: var(--primary-color);
+}
+
+body {
+  --primary-color: #0084ff;
+}
+
+body[data-type=dark] {
+  --primary-color: #005bb1;
+}
+
+.btn {
+  border-radius: 0.22rem;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  min-inline-size: min-content;
+  width: fit-content;
+  background-color: rgba(211, 215, 223, 0.4);
+  color: #000000;
+  block-size: 2.68rem;
+  font-size: 1rem;
+  padding: 0.55rem 1.33rem 0.66rem;
+}
+
+body[data-type=dark] .btn {
+  background-color: rgba(53, 54, 56, 0.4);
+  color: #fff;
+}
+
+.btn.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body[data-type=dark] .btn.primary {
+  background-color: var(--primary-color);
+}
+
+body {
+  --primary-color: #0084ff;
+}
+
+body[data-type=dark] {
+  --primary-color: #005bb1;
+}
+
+.nav {
+  display: grid;
+  padding: 0.7rem 0;
+  font-size: 100%;
+  margin: 0 20rem;
+  /* gap: 1rem; */
+  grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
+  font-weight: 600;
+  border-bottom: 2px solid rgba(211, 215, 223, 0.4);
+  align-items: center;
+  align-content: center;
+}
+
+body[data-type=dark] .nav {
+  border-bottom: 2px solid rgba(53, 54, 56, 0.4);
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+body[data-type=dark] .nav a {
+  color: #fff;
+}
+
+.nav.full-width {
+  margin: 0 !important;
+  padding: 0.7rem 4rem;
+}
+
+.nav > .center + *:last-child, .nav > .right {
+  justify-content: right;
+  float: right;
+}
+
+.nav > ul.links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav > ul.links > li > a, .nav .link {
+  border-radius: 0.22rem;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  min-inline-size: min-content;
+  width: fit-content;
+  background-color: rgba(211, 215, 223, 0.4);
+  color: #000000;
+  block-size: 2.68rem;
+  font-size: 1rem;
+  padding: 0.55rem 1.33rem 0.66rem;
+  background-color: #fff;
+  padding: 0.33rem 0.89rem 0.44rem;
+  block-size: 2.6rem;
+}
+
+body[data-type=dark] .nav > ul.links > li > a, body[data-type=dark] .nav .link {
+  background-color: #0e1114;
+  color: #fff;
+}
+
+.nav .link.primary, body[data-type=dark] .nav .link.primary {
+  border-radius: 0.22rem;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  min-inline-size: min-content;
+  width: fit-content;
+  background-color: rgba(211, 215, 223, 0.4);
+  color: #000000;
+  block-size: 2.68rem;
+  font-size: 1rem;
+  padding: 0.55rem 1.33rem 0.66rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.33rem 0.89rem 0.44rem;
+  block-size: 2.6rem;
+  background-color: var(--primary-color);
+}
+
+.nav > ul.links > li > a:not(.primary):hover, .nav .link:not(.primary):hover {
+  background-color: rgba(211, 215, 223, 0.4);
+}
+
+body[data-type=dark] .nav > ul.links > li > a:not(.primary):hover, body[data-type=dark] .nav .link:not(.primary):hover {
+  background-color: rgba(53, 54, 56, 0.4);
+}
+
+header, .w-header {
+  max-width: 40vw;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+header > * {
+  margin: 0.5rem auto;
+}
+
+header h1 {
+  font-size: 600%;
+  color: #30353d;
+  font-weight: 800;
+}
+
+body[data-type=dark] header h1 {
+  color: #e3e7f0;
+}
+
+header p {
+  font-size: 130%;
+  color: #727988;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body[data-type=dark] {
+  background-color: #0e1114;
+  color: #727988;
+}
+
+.h-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding: 3rem 20rem;
+}
+.container header {
+  padding-bottom: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.row > .col.w-25 {
+  flex-basis: 25%;
+}
+.row > .col.w-33 {
+  flex-basis: 33.3%;
+}
+.row > .col.w-50 {
+  flex-basis: 50%;
+}
+.row > .col.w-auto {
+  flex: 0;
+}
+.row > .col.fill {
+  flex: 1;
+}
+
+hr {
+  border: 1px solid rgba(211, 215, 223, 0.4);
+  width: 100%;
+}
+
+body[data-type=dark] hr {
+  border: 1px solid rgba(53, 54, 56, 0.4);
+}
+
+@media only screen and (max-width: 2000px) {
+  .container {
+    padding: 3rem 15rem;
+  }
+
+  .nav {
+    margin: 0 15rem;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .container {
+    padding: 3rem 12rem;
+  }
+
+  .nav {
+    margin: 0 12rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header, .w-header {
+    max-width: 70vw;
+  }
+
+  header h1 {
+    font-size: 400%;
+  }
+
+  .container {
+    padding: 3rem 8rem;
+  }
+
+  .nav {
+    margin: 0 8rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header, .w-header {
+    max-width: initial;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .nav {
+    margin: 0 3rem;
+  }
+}
+
+/*# sourceMappingURL=index.min.css.map */

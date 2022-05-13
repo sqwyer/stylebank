@@ -19,9 +19,18 @@
     padding: 0.55rem 1.33rem 0.66rem;
 }
 
+body[data-type="dark"] .btn {
+    background-color: $dark-bg;
+    color: #fff;
+}
+
 .btn.primary {
     background-color: $primary;
     color: #fff;
+}
+
+body[data-type="dark"] .btn.primary {
+    background-color: $primary;
 }
 
 @mixin button {

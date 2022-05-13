@@ -14,9 +14,17 @@
     align-content: center;
 }
 
+body[data-type="dark"] .nav {
+    border-bottom: 2px solid $dark-bg;
+}
+
 .nav a {
     color: #000;
     text-decoration: none;
+}
+
+body[data-type="dark"] .nav a {
+    color: #fff;
 }
 
 .nav.full-width {
@@ -42,7 +50,12 @@
     block-size: 2.6rem;
 }
 
-.nav .link.primary {
+body[data-type="dark"] .nav > ul.links > li > a, body[data-type="dark"] .nav .link {
+    background-color: $darkest;
+    color: #fff;
+}
+
+.nav .link.primary, body[data-type="dark"] .nav .link.primary {
     @include btn.button;
     @include btn.primary;
 
@@ -53,4 +66,8 @@
 
 .nav > ul.links > li > a:not(.primary):hover, .nav .link:not(.primary):hover {
     background-color:$light-bg;
+}
+
+body[data-type="dark"] .nav > ul.links > li > a:not(.primary):hover, body[data-type="dark"] .nav .link:not(.primary):hover {
+    background-color: $dark-bg;
 }
