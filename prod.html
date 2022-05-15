@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./build/index.min.css">
 </head>
-<body data-type="dark">
+<body data-type="light">
     <nav class="nav">
         <a href="#">Logo</a>
         <ul class="center links">
@@ -17,17 +17,14 @@
             <li><a>Resources</a></li>
             <li><a>About</a></li>
             <li><a>Blog</a></li> -->
+            <li><a href="#">Docs</a></li>
             <li><a href="#">Examples</a></li>
             <li><a href="#">Import</a></li>
             <!-- <li><a>Test</a></li> -->
         </ul>
         <div class="row right">
-            <a class="link" href="#">
-                Docs
-            </a>
-            <a class="primary link" href="https://github.com/sqwyer/stylebank">
-                Github
-            </a>
+            <a class="link sb-theme-toggle" href="#">Dark</a>
+            <a class="primary link" href="https://github.com/sqwyer/stylebank">Github</a>
         </div>
     </nav>
     <div class="container">
@@ -59,5 +56,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function SB_BUTTON_UPDATER(elems, type) {
+            if(type == 'light') elems.forEach(elem => elem.innerText = 'Dark');
+            else if(type == 'dark') elems.forEach(elem => elem.innerText = 'Light');
+        }
+    </script>
+    <script src="./js/theme.js"></script>
 </body>
 </html>
